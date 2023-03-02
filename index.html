@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regional Court Cases</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#"><p>Borama Regional Court</p></a>
+        <nav>
+            <ul>
+                <li class="border-left"><a href="#" class="add">Add-Case</li></a>
+                <li><a href="#" class="view">View Cases</li></a>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="input-form">
+    <form class="form">
+        <div class="row">
+            <input type="date" id="date">
+            <input type="text" placeholder="Case Type" id="type">
+            <input type="text" placeholder="Case.No" id="number">
+        </div>
+        <div class="row double">
+            <input type="text" placeholder="Dacwoode/Complainant" id="dacwoto">
+            <input type="text" placeholder="Dawaysane/Defendent" id="dacwaysan">
+        </div>
+        <div class="row double">
+            <input type="text" placeholder="Judge" id="garsore">
+            <input type="text" placeholder="Assistant-Judge" id="kaliye">
+        </div>
+    </form>
+    <button type="button" class="add-btn">Add</button>
+</section>
+
+<section class="output-data">
+    <p class="error"></p>
+    <input type="search" placeholder="search" class="search">
+    
+<table class="table">
+    <thead>
+        <tr>
+            <th>Taariikda</th>
+            <th>Nooca Dacwada</th>
+            <th>D.No</th>
+            <th>Dacwooto/de/dayaal</th>
+            <th>Dacwaysan/e/ayaal</th>
+            <th>Garsoore</th>
+            <th>Kaaliye</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody class="data-container"><hr></tbody>
+
+</table>
+</section>
+
+<script src="index.js"></script>
+<script src="navigation.js"></script>
+</body>
+</html>

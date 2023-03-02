@@ -1,0 +1,158 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: whitesmoke;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: burlywood;
+  border-bottom: 3px solid grey;
+  width: 90%;
+  height: 70px;
+  margin: 0 auto;
+}
+
+nav ul {
+  display: flex;
+  gap: 25px;
+  margin-left: 20px;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+.border-left {
+  border-right: 3px solid black;
+  padding-right: 25px;
+}
+
+.input-form {
+  display: flex;
+  flex-direction: column;
+  margin: 50px auto;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding-bottom: 20px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.row input {
+  padding: 25px 50px;
+  font-size: 18px;
+}
+
+.double input {
+  /* padding: 25px 110px; */
+  padding: 25px 50px;
+}
+
+input::placeholder {
+  font-style: italic;
+  font-size: 25px;
+  font-family: 'Dancing Script', cursive;
+}
+
+.add-btn {
+  margin: 15px 30%;
+  padding: 20px;
+  font-size: 25px;
+  font-weight: 600;
+  color: rgb(68, 67, 67);
+}
+
+.output-data {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 45px;
+}
+
+.table {
+  border: 2px solid wheat;
+  margin: 20px 50px;
+  border-collapse: collapse;
+  border-bottom: 1px solid #ccc;
+}
+
+thead {
+  background-color: burlywood;
+  height: 70px;
+  font-weight: 600;
+  font-size: 18px;
+  border-bottom: 3px solid grey;
+}
+
+tbody td {
+  /* border-bottom: 1px solid #ccc; */
+  border-left: 1px solid burlywood;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  padding-left: 15px;
+}
+
+tbody tr:nth-child(even) {
+  background-color: rgb(228, 227, 227);
+}
+
+.search {
+  margin: 25px 5% 10px 60%;
+  padding: 15px 20px;
+}
+
+.error {
+  color: red;
+  font-size: 18px;
+  font-style: italic;
+  margin-left: 60%;
+  font-weight: 700;
+}
+
+.edit {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.btn {
+  padding: 4px 10px;
+  font-size: 18px;
+  border-radius: 8px;
+}
+
+.input-form.hide {
+  display: none;
+}
+
+.output-data.show {
+  display: flex;
+}
+
+@media only screen and (min-width: 768px) {
+  .double input {
+    padding: 25px 110px;
+  }
+}
