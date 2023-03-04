@@ -36,7 +36,7 @@ nav ul li {
 a {
   text-decoration: none;
   color: black;
-  font-size: 2 20px;
+  font-size: 20px;
 }
 
 .border-left {
@@ -49,8 +49,9 @@ a {
   flex-direction: column;
   margin: 50px auto;
   border: 3px solid gray;
-  box-shadow: 2px 3px 4px #deb88750,
-        inset 1px 2px 2px #00000020;
+  box-shadow:
+    2px 3px 4px #deb88750,
+    inset 1px 2px 2px #00000020;
   width: 80%;
 }
 
@@ -105,8 +106,9 @@ input::placeholder {
   margin: 20px 50px;
   border-collapse: collapse;
   border-bottom: 1px solid #ccc;
-  box-shadow: inset 2px 4px 2px slategray,
-              2px 3px 2px gray;
+  box-shadow:
+    inset 2px 4px 2px slategray,
+    2px 3px 2px gray;
 }
 
 thead {
