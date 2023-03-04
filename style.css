@@ -36,7 +36,7 @@ nav ul li {
 a {
   text-decoration: none;
   color: black;
-  font-size: 20px;
+  font-size: 2 20px;
 }
 
 .border-left {
@@ -48,6 +48,10 @@ a {
   display: flex;
   flex-direction: column;
   margin: 50px auto;
+  border: 3px solid gray;
+  box-shadow: 2px 3px 4px #deb88750,
+        inset 1px 2px 2px #00000020;
+  width: 80%;
 }
 
 .row {
@@ -60,13 +64,16 @@ a {
   flex-wrap: wrap;
 }
 
+.form {
+  padding: 50px;
+}
+
 .row input {
   padding: 25px 50px;
   font-size: 18px;
 }
 
 .double input {
-  /* padding: 25px 110px; */
   padding: 25px 50px;
 }
 
@@ -77,7 +84,7 @@ input::placeholder {
 }
 
 .add-btn {
-  margin: 15px 30%;
+  margin: 15px 30% 80px 30%;
   padding: 20px;
   font-size: 25px;
   font-weight: 600;
@@ -90,6 +97,7 @@ input::placeholder {
   justify-content: center;
   gap: 15px;
   margin-top: 45px;
+  flex-wrap: wrap;
 }
 
 .table {
@@ -97,6 +105,8 @@ input::placeholder {
   margin: 20px 50px;
   border-collapse: collapse;
   border-bottom: 1px solid #ccc;
+  box-shadow: inset 2px 4px 2px slategray,
+              2px 3px 2px gray;
 }
 
 thead {
@@ -108,7 +118,6 @@ thead {
 }
 
 tbody td {
-  /* border-bottom: 1px solid #ccc; */
   border-left: 1px solid burlywood;
   padding-bottom: 15px;
   padding-top: 15px;
@@ -141,6 +150,7 @@ tbody tr:nth-child(even) {
   padding: 4px 10px;
   font-size: 18px;
   border-radius: 8px;
+  cursor: pointer;
 }
 
 .input-form.hide {
