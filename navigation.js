@@ -3,16 +3,16 @@ const view = document.querySelectorAll('.view');
 const sectionOne = document.querySelector('.input-form');
 const sectionTwo = document.querySelector('.output-data');
 
-addNew.forEach((item) => {
+view.forEach((item) => {
   item.addEventListener('click', () => {
-    sectionOne.classList.remove('hide');
-    sectionTwo.classList.remove('show');
+    sectionOne.classList.remove('show');
+    sectionTwo.classList.remove('hide');
   });
 });
 
-view.forEach((item) => {
+addNew.forEach((item) => {
   item.addEventListener('click', () => {
-    sectionOne.classList.add('hide');
-    sectionTwo.classList.add('show');
+    sectionOne.classList.add('show');
+    sectionTwo.classList.add('hide');
   });
 });

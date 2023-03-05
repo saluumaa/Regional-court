@@ -45,7 +45,7 @@ a {
 }
 
 .input-form {
-  display: flex;
+  display: none;
   flex-direction: column;
   margin: 50px auto;
   border: 3px solid gray;
@@ -66,16 +66,16 @@ a {
 }
 
 .form {
-  padding: 50px;
+  padding: 30px;
 }
 
 .row input {
-  padding: 25px 50px;
+  padding: 25px 30px;
   font-size: 18px;
 }
 
 .double input {
-  padding: 25px 50px;
+  padding: 25px 30px;
 }
 
 input::placeholder {
@@ -93,7 +93,7 @@ input::placeholder {
 }
 
 .output-data {
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 15px;
@@ -155,11 +155,11 @@ tbody tr:nth-child(even) {
   cursor: pointer;
 }
 
-.input-form.hide {
+.output-data.hide {
   display: none;
 }
 
-.output-data.show {
+.input-form.show {
   display: flex;
 }
 
