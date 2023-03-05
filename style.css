@@ -21,6 +21,7 @@ header {
   width: 90%;
   height: 70px;
   margin: 0 auto;
+  position: sticky;
 }
 
 nav ul {
